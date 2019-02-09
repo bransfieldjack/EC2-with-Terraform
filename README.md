@@ -86,3 +86,33 @@ Putty download:
  ### Open the session to the instance: 
 
  ![open_session](https://s3-ap-southeast-2.amazonaws.com/terraform-kong-09022019/open_session.PNG)
+
+ ### Once logged in, run the "sudo yum update" command: 
+
+ ![update](https://s3-ap-southeast-2.amazonaws.com/terraform-kong-09022019/sudo_yum_update.PNG)
+
+ ### Run the following commands to setup terraform on the instance:
+
+ ```
+ cd ~
+ ```
+ ```
+ mkdir terraform
+ ```
+ ```
+ cd terraform
+ ```
+ ```
+ wget https://releases.hashicorp.com/terraform/0.11.11/terraform_0.11.11_linux_amd64.zip
+ ``` 
+ ```
+ unzip terraform_0.11.11_linux_amd64.zip
+ ```
+ Adding terraform to the path in linux:
+ ```
+ echo @"export PATH=\$PATH:$(pwd)" >> ~/.bash_profile
+ ```
+ To get it working:
+ ```
+ source ~/.bash_profile
+ ```
