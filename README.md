@@ -116,3 +116,64 @@ Putty download:
  ```
  source ~/.bash_profile
  ```
+
+ ### Next, we need to create a .tf configuration file:
+
+ Open VIM or NANO text editor inside your instance, whichever you prefer.
+ Add the followng basic configuration to create your instance on AWS according to your timezone/preferences/etc. : 
+
+Command:
+
+```
+nano ec2.tf
+```
+
+Input:
+
+```
+provider "aws" {
+	access_key = "ACCESS_KEY_HERE"
+	secret_key = "SECRET_KEY_HERE"
+	region = "us-east-1"
+}
+
+resource "aws_instance" "example" {
+	ami = "ami-2757f631"
+	instance_type = "t2.micro"
+}
+```
+
+When finished, save the file and exit:
+
+![nano](https://s3-ap-southeast-2.amazonaws.com/terraform-kong-09022019/nano.PNG)
+
+Navigate back to your directory and run the "terraform init" command:
+
+```
+terraform init
+```
+
+This will initialise plugin requirements, you cannot proceed without doing this. 
+
+![initialised](https://s3-ap-southeast-2.amazonaws.com/terraform-kong-09022019/initialized.PNG)
+
+Next, we will want to compile the plan the create the instance using the newly added ec2.tf configuration file:
+
+```
+terraform plan
+```
+
+```
+terraform apply
+```
+
+```
+yes
+```
+
+You should see your instance being created:
+
+```
+aws_instance.example: Still creating... (10s elapsed)
+aws_instance.example: Still creating... (20s elapsed)
+```
