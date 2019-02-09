@@ -79,8 +79,9 @@ Putty download:
  ![dns](https://s3-ap-southeast-2.amazonaws.com/terraform-kong-09022019/public_dns.PNG)
 
  ### Select connection, SSH, Auth and Browse and find the private key already created. (notes on how to create a private key for putty:https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/putty.html):
+ ![private_key1](https://s3-ap-southeast-2.amazonaws.com/terraform-kong-09022019/connection_ssh_auth_browse.PNG)
 
- ![private_key](https://s3-ap-southeast-2.amazonaws.com/terraform-kong-09022019/putty_private_key.PNG)
+ ![private_key2](https://s3-ap-southeast-2.amazonaws.com/terraform-kong-09022019/putty_private_key.PNG)
 
  ### Open the session to the instance: 
 
