@@ -157,7 +157,7 @@ This will initialise plugin requirements, you cannot proceed without doing this.
 
 ![initialised](https://s3-ap-southeast-2.amazonaws.com/terraform-kong-09022019/initialized.PNG)
 
-Next, we will want to compile the plan the create the instance using the newly added ec2.tf configuration file:
+Next, we will want to compile the plan, then create the instance using the newly added ec2.tf configuration file:
 
 ```
 terraform plan
@@ -177,3 +177,7 @@ You should see your instance being created:
 aws_instance.example: Still creating... (10s elapsed)
 aws_instance.example: Still creating... (20s elapsed)
 ```
+
+You should see that the setup has completed with success:
+
+![complete](https://s3-ap-southeast-2.amazonaws.com/terraform-kong-09022019/apply_complete.PNG)
