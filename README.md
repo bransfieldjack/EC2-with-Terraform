@@ -19,5 +19,9 @@ Terraform download:
 
  - https://www.terraform.io/downloads.html
 
-### EC2 Creation and setuo:
+### EC2 Creation and setup:
 
+Login to the AWS console with the appropriate user account (not the root account):
+![login_aws](https://s3-ap-southeast-2.amazonaws.com/terraform-kong-09022019/aws_login.PNG)
+Select EC2 from the management console:
+![select_ec2](https://s3-ap-southeast-2.amazonaws.com/terraform-kong-09022019/select_ec2.PNG)
